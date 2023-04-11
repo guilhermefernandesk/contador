@@ -17,7 +17,6 @@
 .incrementar{
   font-size: 60%;
   position: relative;
-  top: 20vh;
   margin-right: 10px; /*medida exata */
   background-color: green;
   border-radius: 50%;
@@ -28,7 +27,6 @@
 .decrementar{
   font-size: 60%;
   position: relative;
-  top: 20vh;
   margin-right: 10px;
   background-color: red;
   border-radius: 50%;
