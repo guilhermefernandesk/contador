@@ -1,5 +1,17 @@
 import './App.css';
 
+// importing components from react-router-dom package
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+// import Home component
+import Home from "./components/Home";
+// import About component
+import About from "./components/About";
+
 import { useState } from 'react';
 
 function App() {
@@ -16,12 +28,24 @@ function App() {
   }
   return (
     <div className='App'> {/*classe CSS de estilo "App"*/}
+     <div>
+      {/* This is the alias of BrowserRouter i.e. Router */}
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+    </div>
      <h1 className='Contador'>Contador</h1>
       {count}
       <div>
       <button className = 'decrementar' onClick={decrementar}>-</button> 
       <button className = 'incrementar' onClick={incrementar}>+</button> 
      </div>
+     
+
     </div>
   );
 }
