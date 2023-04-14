@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Contador} />
-          <Route path="/home" component={Home} />
+          <Route path="/home/:count?" component={Home} />
           <Redirect to="/" />
         </Switch>
       </Router>

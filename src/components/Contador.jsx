@@ -7,6 +7,8 @@ function Contador() {
     //contador começa em 0
     const [count, setCount] = useState(0);
     const [name, setName] = useState("");
+
+
     //funcao chamada para incrementar o botao
     function incrementar() {
         setCount(count + 1);
@@ -25,22 +27,18 @@ function Contador() {
                 <button className='decrementar' onClick={decrementar} >-</button>
                 <button className='incrementar' onClick={incrementar}>+</button>
             </div>
-            
-            <Link to="/home">
-                <button> GO HOME</button>
+            <Link to={"/home/" + count}>
+                <button>HOME PAGE</button>
             </Link>
-
             <form>
                 <input
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="nome"
+                    placeholder="Nome"
                 />
                 <input type="submit" value="Submit"></input>
             </form>
-
-
         </div>
     );
 }
