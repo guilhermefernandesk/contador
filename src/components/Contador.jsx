@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from 'react';
 
-
-function Contador() {
+function Contador({ history }) {
     //contador começa em 0
     const [count, setCount] = useState(0);
     const [name, setName] = useState("");
-
+   
 
     //funcao chamada para incrementar o botao
     function incrementar() {
@@ -18,6 +16,9 @@ function Contador() {
         if (count > 0)
             setCount(count - 1);
     }
+    const onClick = () => {
+        history.push('/home/' + count + '/' + name);
+    }
 
     return (
         <div className='App'> {/*classe CSS de estilo "App"*/}
@@ -27,16 +28,14 @@ function Contador() {
                 <button className='decrementar' onClick={decrementar} >-</button>
                 <button className='incrementar' onClick={incrementar}>+</button>
             </div>
-            <Link to={"/home/" + count}>
-                <button>HOME PAGE</button>
-            </Link>
-            <form>
+            <form onSubmit={onClick}>
                 <input
-                    type="text"
+                    type="text" required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Nome"
                 />
+               
                 <input type="submit" value="Submit"></input>
             </form>
         </div>
