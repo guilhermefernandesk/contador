@@ -1,13 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-  
-const Home = () => {
+import { Link, useParams } from "react-router-dom";
+
+function Home() {
+  const { count } = useParams();
+
   return (
     <div className='App'>
       <h1>Home Page</h1>
-          <Link to="/">Home</Link>
+      <p>Contador: {count} </p>
+      <Link to="/">
+        <button>BACK PAGE</button>
+      </Link>
     </div>
   );
 };
-  
+
 export default Home;
