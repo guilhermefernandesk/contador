@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 //import image1 from '../img/1.jpg'
-import image2 from '../img/2.jpg'
-import image3 from '../img/3.jpg'
+import ft1 from '../img/2.jpg'
+import ft2 from '../img/3.jpg'
 
 function Contador({ history }) {
     //contador começa em 0
@@ -41,7 +41,7 @@ function Contador({ history }) {
                     <Carousel.Item>
                         <img
                             className="carousel" //controla altura
-                            src={image2}
+                            src={ft1}
                             alt="Image One"
                         />
                         <Carousel.Caption>
@@ -52,7 +52,7 @@ function Contador({ history }) {
                     <Carousel.Item >
                         <img
                             className="carousel" //controla altura
-                            src={image3}
+                            src={ft2}
                             alt="Image Two"
                         />
                     </Carousel.Item>
