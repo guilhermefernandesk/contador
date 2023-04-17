@@ -3,19 +3,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 300%;
   position: absolute; /*pode sobrepor elementos e se moverá junto com a rolagem da pagina */
   width: 100%;
   height: 100%;
-  top: -15%;
-}
+  top: -19%;
+} 
 .Contador{
-  font-size: 120%; /*120% do tamanho do pai */
+  font-size: 200%; /*120% do tamanho do pai */
   position: relative; /* é possivel ajustar as propriedades esq,dir,sup,inf */
-  top: 5vh; /*1/100 da altura do navegador */
+  top: 1vh; /*1/100 da altura do navegador */
 }
 .incrementar{
-  font-size: 60%;
+  font-size: 100%;
   position: relative;
   margin-right: 10px; /*medida exata */
   background-color: green;
@@ -25,7 +24,7 @@
   width: 50px;
 }
 .decrementar{
-  font-size: 60%;
+  font-size: 100%;
   position: relative;
   margin-right: 10px;
   background-color: red;
@@ -34,3 +33,14 @@
   height: 50px;
   width: 50px;
 }
+.carousel{
+  height: 400px;
+  width: 100%;
+  bottom: 1vh;
+}
+.carousel1{
+  padding: 1%;
+  height: 400px;
+  width: 100%; 
+}
+
