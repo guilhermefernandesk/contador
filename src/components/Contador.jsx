@@ -42,7 +42,7 @@ function Contador({ history }) {
                         <img
                             className="carousel" //controla altura
                             src={mato}
-                            alt="Image One"
+                            alt="mato One"
                         />
                         <Carousel.Caption>
                             <h3>Primeira imagem</h3>
@@ -53,7 +53,7 @@ function Contador({ history }) {
                         <img
                             className="carousel" //controla altura
                             src={casa}
-                            alt="Image Two"
+                            alt="casa Two"
                         />
                     </Carousel.Item>
                 </Carousel>
