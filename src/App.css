@@ -38,8 +38,8 @@
 }
 
 .carousel .slide img {
-  width: 99%;
-  max-height: 600px;
+  max-width: 99%;
+  max-height: 650px;
 }
 
 .image-wrapper {
