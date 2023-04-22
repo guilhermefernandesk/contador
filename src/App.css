@@ -6,7 +6,7 @@
   position: absolute; /*pode sobrepor elementos e se moverá junto com a rolagem da pagina */
   width: 100%;
   height: 100%;
-  top: -19%;
+  top: -7%;
 } 
 .Contador{
   font-size: 200%; /*120% do tamanho do pai */
@@ -38,8 +38,8 @@
 }
 
 .carousel .slide img {
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  max-height: 600px;
 }
 
 .image-wrapper {
