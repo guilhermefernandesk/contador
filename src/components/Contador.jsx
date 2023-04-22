@@ -59,7 +59,7 @@ function Contador({ history }) {
                 {slides.map((slide) => (
                     <div key={slide.title}>
                         <div className="image-wrapper">
-                            <img src={slide.retrato} />
+                            <img src={slide.retrato} alt="alterando" />
                             {slide.control}
                         </div>
                     </div>
