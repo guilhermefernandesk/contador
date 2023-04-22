@@ -1,29 +1,32 @@
 .App {
-  display: flex; /* flexivel*/
+  display: flex;   /* flexivel*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute; /*pode sobrepor elementos e se moverá junto com a rolagem da pagina */
   width: 100%;
   height: 100%;
-  top: -19%;
-} 
-.Contador{
-  font-size: 200%; /*120% do tamanho do pai */
-  position: relative; /* é possivel ajustar as propriedades esq,dir,sup,inf */
-  top: 1vh; /*1/100 da altura do navegador */
+  top: -6%;
 }
-.incrementar{
+
+.Contador {
+  font-size: 200%;   /*120% do tamanho do pai */
+  position: relative;  /* é possivel ajustar as propriedades esq,dir,sup,inf */
+}
+  
+
+.incrementar {
   font-size: 100%;
   position: relative;
-  margin-right: 10px; /*medida exata */
+  margin-right: 10px;
   background-color: green;
   border-radius: 50%;
   color: white;
   height: 50px;
   width: 50px;
 }
-.decrementar{
+
+.decrementar {
   font-size: 100%;
   position: relative;
   margin-right: 10px;
@@ -34,13 +37,15 @@
   width: 50px;
 }
 .carousel{
-  height: 400px;
+  height: 100%;
+}
+.carousel .slide img{
+  max-width: 99%;
+  max-height: 700px;
+}
+.carousel-img{
   width: 100%;
-  bottom: 1vh;
-}
-.carousel1{
-  padding: 1%;
-  height: 400px;
-  width: 100%; 
-}
+  height: 100%;
 
+
+}
