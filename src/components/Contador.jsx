@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 //import image1 from '../img/1.jpg'
+//carousel
 import mato from '../img/2.jpg'
 import casa from '../img/3.jpg'
 
