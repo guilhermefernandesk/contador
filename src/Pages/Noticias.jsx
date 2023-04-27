@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import '../components/noticias.css'
+import '../components/Cards.css'
 
 import { data } from '../dataNews/data'
-import News from "../components/News";
+import Cards from "../components/Cards";
 
 
 
@@ -17,8 +17,8 @@ function Noticias() {
             </Link>
 
             <div class="grid-container">
-                {data.map(news => (
-                    <News key={news.id} news={news} />
+                {data.map(cards => (
+                    <Cards key={cards.id} cards={cards} />
                 ))}
             </div>
         </div>

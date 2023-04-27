@@ -11,22 +11,22 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const News = ({ news }) => (
-    <div class="grid-container" key={news.id}>
+const Cards = ({ cards }) => (
+    <div class="grid-container" key={cards.id}>
         <div class="grid-item">
             <Card sx={{ maxWidth: 300 }}>
                 <CardMedia
                     component="img"
                     alt="galaxia"
                     height="140"
-                    image={news.image}
+                    image={cards.image}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        {news.title}
+                        {cards.title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                       {news.content}
+                       {cards.content}
                     </Typography>
                 </CardContent>
                 <CardActions>
@@ -37,4 +37,4 @@ const News = ({ news }) => (
     </div>
 )
 
-export default News;
+export default Cards;
