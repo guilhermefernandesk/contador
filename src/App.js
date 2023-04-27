@@ -7,8 +7,9 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import Home from "./components/Home";
-import Contador from "./components/Contador";
+import Contador from "./Pages/Contador";
+import Home from "./Pages/Home";
+import Noticias from "./Pages/Noticias";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Contador} />
           <Route path="/home/:count?/:name?/" component={Home} />
+          <Route path="/noticias" component={Noticias} />
           <Redirect to="/" />
         </Switch>
       </Router>
