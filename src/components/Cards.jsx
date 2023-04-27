@@ -1,5 +1,7 @@
 //npm install @mui/material @emotion/react @emotion/styled
 //npm install @mui/material @mui/styled-engine-sc styled-components
+//npm install @mui/icons-material
+
 
 
 import React from "react";
@@ -10,6 +12,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+
 
 const Cards = ({ cards }) => (
     <div class="grid-container" key={cards.id}>
@@ -26,11 +29,13 @@ const Cards = ({ cards }) => (
                         {cards.title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                       {cards.content}
+                        {cards.content}
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">Share</Button>
+                    <Button href="#" variant="outlined" size="small">
+                        Ver Notícia
+                    </Button>
                 </CardActions>
             </Card>
         </div>
