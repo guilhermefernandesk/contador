@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 
+
+
 function Home() {
   const { count } = useParams();
   const { name } = useParams();
@@ -10,8 +12,8 @@ function Home() {
       <h1>Home Page</h1>
       <p>Contador: {count} </p>
       <p>Nome: {name} </p>
-      <Link to="/">
-        <button>BACK PAGE</button>
+      <Link to="/noticias">
+        <button>NEWS PAGE</button>
       </Link>
     </div>
   );

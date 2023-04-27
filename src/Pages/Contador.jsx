@@ -5,9 +5,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 
-import galaxia from '../img/1.jpg'
-import mato from '../img/2.jpg'
-import casa from '../img/3.jpg'
+import galaxia from '../assets/img/1.jpg'
+import mato from '../assets/img/2.jpg'
+import casa from '../assets/img/3.jpg'
 
 
 const slides = [
