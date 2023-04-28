@@ -11,7 +11,7 @@ import Cards from "../components/Cards";
 import galaxia from '../assets/img/1.jpg'
 
 function Noticias() {
-    const MaisRecente = data.sort((a, b) => b.date - a.date);
+    data.sort((a, b) => b.date - a.date);
 
     const [paginaAtual, setpaginaAtual] = useState(1);
 
