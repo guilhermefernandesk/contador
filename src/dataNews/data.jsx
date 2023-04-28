@@ -8,28 +8,28 @@ import bosque from '../assets/img/3.jpg'
       title: "Galáxias",
       content: "example content",
       image: galaxia,
-      date: new Date('2023-04-26')
+      date: new Date('2023-04-27')
     },
     {
       id: 2,
       title: "Mato",
       content: "example content",
       image: mato,
-      date: new Date('2023-04-27')
+      date: new Date('2023-04-26')
     },
     {
       id: 3,
       title: "Bosque",
       content: "example content",
       image: bosque,
-      date: new Date('2023-04-27')
+      date: new Date('2023-04-26')
     },
     {
       id: 4,
       title: "Bosque 2",
       content: "example content",
       image: bosque,
-      date: new Date('2023-04-27')
+      date: new Date('2023-04-26')
     },
     {
       id: 5,
