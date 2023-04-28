@@ -8,7 +8,7 @@ import bosque from '../assets/img/3.jpg'
       title: "Galáxias",
       content: "example content",
       image: galaxia,
-      date: new Date('2023-04-27')
+      date: new Date('2023-04-26')
     },
     {
       id: 2,
