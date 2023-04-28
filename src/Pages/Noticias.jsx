@@ -3,19 +3,24 @@ import { Link } from "react-router-dom";
 
 import '../components/Cards.css'
 
+import '../Pages/Noticias.css'
+
 import { data } from '../dataNews/data'
 import Cards from "../components/Cards";
+
+import galaxia from '../assets/img/1.jpg'
 
 
 
 function Noticias() {
     return (
         <div className="App">
-            <h1>Noticias Page</h1>
-            <Link to="/">
-                <button>CONTADOR PAGE</button>
-            </Link>
 
+            <h3> Notícias</h3>
+            <div>
+                <img className="image image-cover" src={galaxia} />
+            </div>
+            <p> Últimas Notícias</p>
             <div class="grid-container">
                 {data.map(cards => (
                     <Cards key={cards.id} cards={cards} />
