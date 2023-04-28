@@ -9,7 +9,7 @@ import Cards from "../components/Cards";
 
 import galaxia from '../assets/img/1.jpg'
 
-
+const sortedCards = data.sort((a, b) => b.date - a.date);
 
 function Noticias() {
     return (
@@ -21,7 +21,7 @@ function Noticias() {
             </div>
             <p> Últimas Notícias</p>
             <div class="grid-container">
-                {data.map(cards => (
+                {sortedCards.map(cards => (
                     <Cards key={cards.id} cards={cards} />
                 ))}
             </div>
