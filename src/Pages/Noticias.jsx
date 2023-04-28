@@ -30,12 +30,6 @@ function Noticias() {
         <Cards key={cards.id} cards={cards} />
     ));
 
-    // const MostraNoticiaDestaque = currentCards.map(cards => (
-    //     <div key={cards.id}>
-    //         <img className="conteiner conteiner-cover" alt="destaque" src={cards.image} />
-    //     </div>
-    // ));
-
     const handlePageChange = ({ selected }) => {
         setpaginaAtual(selected);
     };
