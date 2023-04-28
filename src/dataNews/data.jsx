@@ -27,4 +27,16 @@ import bosque from '../assets/img/3.jpg'
       content: "example content",
       image: bosque
     },
+    {
+      id: 5,
+      title: "Bosque 3",
+      content: "example content",
+      image: bosque
+    },
+    {
+      id: 6,
+      title: "Bosque 4",
+      content: "example content",
+      image: bosque
+    },
     ]

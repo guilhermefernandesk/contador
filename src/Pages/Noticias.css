@@ -1,0 +1,9 @@
+.image {
+    width: 700px;
+    height: 100px;
+  }
+  
+  .image-cover {
+    object-fit: cover;
+    object-position: center;
+  }

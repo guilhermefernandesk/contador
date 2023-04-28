@@ -17,7 +17,7 @@ import Typography from '@mui/material/Typography';
 const Cards = ({ cards }) => (
     <div class="grid-container" key={cards.id}>
         <div class="grid-item">
-            <Card sx={{ maxWidth: 300 }}>
+            <Card sx={{ maxWidth: 200 }}>
                 <CardMedia
                     component="img"
                     alt="galaxia"
