@@ -7,7 +7,6 @@
     object-fit: cover;
     object-position: center;
   }
-  
   .pagination {
     display: flex;
     justify-content: center;
@@ -26,6 +25,7 @@
     background-color: #fff;
     color: #333;
     text-decoration: none;
+    cursor: pointer;
   }
   
   .pagination a:hover {
@@ -33,6 +33,6 @@
   }
   
   .pagination .active a {
-    background-color: #333;
-    color: #fff;
+    font-weight: bold;
+    color: #45b3e3;
   }
