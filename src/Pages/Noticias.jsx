@@ -18,7 +18,7 @@ function Noticias() {
 
             <h3> Notícias</h3>
             <div>
-                <img className="conteiner conteiner-cover" src={galaxia} />
+                <img className="conteiner conteiner-cover" alt="destaque" src={galaxia} />
             </div>
             <p> Últimas Notícias</p>
             <div class="grid-container">
