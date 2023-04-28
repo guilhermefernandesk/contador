@@ -1,9 +1,9 @@
-.image {
+.conteiner {
     width: 700px;
     height: 100px;
   }
   
-  .image-cover {
+  .conteiner-cover {
     object-fit: cover;
     object-position: center;
   }
