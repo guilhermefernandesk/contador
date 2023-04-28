@@ -3,13 +3,10 @@ import React from "react";
 import { useState } from 'react';
 
 import '../components/Cards.css'
-
 import '../Pages/Noticias.css'
 
 import { data } from '../dataNews/data'
 import Cards from "../components/Cards";
-
-import galaxia from '../assets/img/1.jpg'
 
 import ReactPaginate from 'react-paginate';
 
@@ -35,17 +32,9 @@ function Noticias() {
     };
     const pageCount = Math.ceil(data.length / CardsPorPagina);
 
-
-
-
     return (
         <div className="App">
-
             <h3> Notícias</h3>
-            <div>
-                <img className="conteiner conteiner-cover" alt="destaque" src={galaxia} />
-                {/* {MostraNoticiaDestaque} */}
-            </div>
             <p> Últimas Notícias</p>
             <div class="grid-container">
                 {MostraCards}
