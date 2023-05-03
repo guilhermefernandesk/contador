@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 
+import Header from "../components/Header";
+
 import '../components/Sidebar.css'
 
 function Home() {
@@ -14,16 +16,12 @@ function Home() {
 
   return (
     <div>
-      
-      <div className="nav-links">
-          <ul>
-            <li><a href="#" target="_blank">Home</a></li>
-            <li><a href="#" target="_blank">Sobre</a></li>
-            <li><a href="#" target="_blank">Contato</a></li>
-          </ul>
-        </div>
+      <div>
+        <Header/>
+      </div>
 
-      <div className="wrapper">
+
+      {/* <div className="wrapper">
         <div className="section">
           <div className="navbar">
             <div className="nav-btn">
@@ -52,7 +50,7 @@ function Home() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       <div>
         <h1>Home Page</h1>
