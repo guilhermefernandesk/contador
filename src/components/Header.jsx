@@ -13,12 +13,12 @@ function Header() {
     return (
         <div className="header">
             <a href="#" className="btn">
-                <button onClick={toggleSidebar}>=</button>
+                <span onClick={toggleSidebar}>☰</span>
             </a>
             <Sidebar showSidebar={showSidebar}/>
             <a href="#" className="logo">Logo</a>
             <div className="header-right">
-                <a href="#">Login</a>
+                <a href="#">LOGIN</a>
             </div>
         </div>
     )
