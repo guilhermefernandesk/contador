@@ -46,3 +46,25 @@ export default Sidebar;
 //                 </div>
 //             </div>
 
+// import React from "react";
+
+// import '../Sidebar/Sidebar.css'
+
+// function Sidebar({ showSidebar }) {
+//     return (
+
+//         <div className={`sidebar ${showSidebar ? "show" : ""}`}>
+//             <h2>Meu Sidebar</h2>
+//             <ul>
+//                 <li className="active">
+//                     Camadas
+//                 </li>
+//                 <li>
+//                     Sobre
+//                 </li>
+//             </ul>
+//         </div>
+//     )
+// }
+
+// export default Sidebar;
