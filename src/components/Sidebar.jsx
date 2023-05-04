@@ -1,70 +1,68 @@
 import React from "react";
+import { useState } from 'react';
 
 import '../components/Sidebar.css'
 
+const itensCheckbox = [
+    {
+        id: 'area_especial',
+        label: 'Área especial'
+    },
+    {
+        id: 'bairros',
+        label: 'Bairros'
+    },
+
+];
+
 function Sidebar({ showSidebar }) {
+    const [showCamadasContainer, setShowCamadasContainer] = useState(false);
+    const [showSobreContainer, setShowSobreContainer] = useState(false);
+
+    const toggleCamadasContainer = () => {
+        setShowCamadasContainer(!showCamadasContainer);
+        setShowSobreContainer(false); // oculta a outra div, se ela estiver aberta
+    };
+    const toggleSobreContainer = () => {
+        setShowSobreContainer(!showSobreContainer);
+        setShowCamadasContainer(false); // oculta a outra div, se ela estiver aberta
+    };
+
+
     return (
         <div className={`sidebar ${showSidebar ? "show" : ""}`}>
-            <h2>Meu Sidebar</h2>
-            <ul>
-                <li>Opção 1</li>
-                <li>Opção 2</li>
-                <li>Opção 3</li>
-            </ul>
+            <div className="container">
+                <img src="" alt="logo" className="logo-sidebar"></img>
+                <hr></hr>
+                <ul>
+                    <li className="active" onClick={toggleCamadasContainer}>
+                        Camadas
+                    </li>
+                    {showCamadasContainer && (
+                        <div className="text-container">
+                            {itensCheckbox.map((item) => (
+                                <ul key={item.id}>
+                                    <label htmlFor={item.id}>
+                                        <input id={item.id} type="checkbox" />
+                                        {item.label}
+                                    </label>
+                                </ul>
+                            ))}
+                        </div>
+                    )}
+                    <li onClick={toggleSobreContainer}>
+                        Sobre
+                    </li>
+                    {showSobreContainer &&(
+                    <div className="text-container">
+                        Projeto de Recadastramento Imobiliário
+                    </div>
+                    )}
+                </ul>
+
+            </div>
         </div>
     )
 }
 
 export default Sidebar;
-
-// <div className="wrapper">
-//                 <div className="section">
-//                     <div className="nav-btn">
-//                         <a href="#">
-//                             <span onClick={click}>=</span>
-//                         </a>
-//                     </div>
-//                 </div>
-//                 <div className="sidebar">
-//                     <ul>
-//                         <li>
-//                             <a href="#" className="active">
-//                                 <span>Home</span>
-//                             </a>
-//                         </li>
-//                         <li>
-//                             <a href="#">
-//                                 <span>My Dashboard</span>
-//                             </a>
-//                         </li>
-//                         <li>
-//                             <a href="#">
-//                                 <span>Contato</span>
-//                             </a>
-//                         </li>
-//                     </ul>
-//                 </div>
-//             </div>
-
-// import React from "react";
-
-// import '../Sidebar/Sidebar.css'
-
-// function Sidebar({ showSidebar }) {
-//     return (
-
-//         <div className={`sidebar ${showSidebar ? "show" : ""}`}>
-//             <h2>Meu Sidebar</h2>
-//             <ul>
-//                 <li className="active">
-//                     Camadas
-//                 </li>
-//                 <li>
-//                     Sobre
-//                 </li>
-//             </ul>
-//         </div>
-//     )
-// }
-
-// export default Sidebar;
