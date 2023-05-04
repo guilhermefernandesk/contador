@@ -1,4 +1,4 @@
-* {
+/* * {
     list-style: none;
     text-decoration: none;
     margin: 0;
@@ -44,13 +44,6 @@
     transition: all 0.5s ease;
 }
 
-.navbar {
-    background: rgb(7, 105, 185);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-}
 
 .nav-btn a {
     font-size: 28px;
@@ -72,3 +65,19 @@ body.active .wrapper .section {
 
 
 
+ */
+
+.sidebar {
+    background-color: #076780;
+    position: fixed;
+    width: 225px;
+    padding: 20px;
+    height: 100%;
+    left: -300px;
+    top: 90px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.show {
+    left: 0;
+}
