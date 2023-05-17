@@ -3,10 +3,16 @@ import { Link, useParams } from "react-router-dom";
 
 import Header from "../components/Header";
 
+import '../components/Sidebar.css'
 
 function Home() {
   const { count } = useParams();
   const { name } = useParams();
+
+  const click = () => {
+    document.querySelector("body").classList.toggle("active");
+  };
+
 
   return (
     <div>
@@ -14,6 +20,37 @@ function Home() {
         <Header/>
       </div>
 
+
+      {/* <div className="wrapper">
+        <div className="section">
+          <div className="navbar">
+            <div className="nav-btn">
+              <a href="#">
+                <span onClick={click}>=</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="sidebar">
+          <ul>
+            <li>
+              <a href="#" className="active">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>My Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contato</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> */}
 
       <div>
         <h1>Home Page</h1>
