@@ -14,45 +14,40 @@ function Home() {
 
   return (
     <div>
-      
-      <div className="nav-links">
-          <ul>
-            <li><a href="#" target="_blank">Home</a></li>
-            <li><a href="#" target="_blank">Sobre</a></li>
-            <li><a href="#" target="_blank">Contato</a></li>
-          </ul>
-        </div>
-
-      <div className="wrapper">
-        <div className="section">
-          <div className="navbar">
-            <div className="nav-btn">
+      <div class="wrapper"> {/*Top menu*/}
+        <div class="section">
+          <div class="top_navbar">
+            <div class="hamburger">
               <a href="#">
                 <span onClick={click}>=</span>
               </a>
             </div>
           </div>
         </div>
-        <div className="sidebar">
+
+
+
+        <div class="sidebar"> {/*text e menu item*/}
           <ul>
+
+            {/* item */}
             <li>
-              <a href="#" className="active">
-                <span>Home</span>
+              <a href="#" class="active">
+                <span class="item">Home</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <span>My Dashboard</span>
-              </a>
-            </li>
+            {/* ------ */}
             <li>
               <a href="#">
-                <span>Contato</span>
+                <span class="item">My Dashboard</span>
               </a>
             </li>
+
           </ul>
+
         </div>
       </div>
+
 
       <div>
         <h1>Home Page</h1>
@@ -61,8 +56,8 @@ function Home() {
         <Link to="/noticias">
           <button>NEWS PAGE</button>
         </Link>
-      </div>
 
+      </div>
     </div>
   );
 };
