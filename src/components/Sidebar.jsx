@@ -6,6 +6,7 @@ import React from "react";
 import { useState } from 'react';
 
 import '../components/Sidebar.css'
+import galaxia from '../assets/img/1.jpg'
 
 // import SearchIcon from '@material-ui/icons/Search';
 
@@ -132,7 +133,7 @@ function Sidebar({ showSidebar }) {
     return (
         <div className={`sidebar ${showSidebar ? "show" : ""}`}>
             <div className="container">
-                <img src="" alt="logo" className="logo-sidebar"></img>
+                <img src={galaxia} alt="logo" className="logo-sidebar"></img>
                 <hr></hr>
                 <ul>
                     <li className="active" onClick={toggleCamadasContainer}>
