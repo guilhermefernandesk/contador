@@ -1,13 +1,7 @@
-//yarn add @material-ui/core
-
-//yarn add @material-ui/icons
-
 import React from "react";
 import { useState } from 'react';
 
 import '../components/Sidebar.css'
-
-import SearchIcon from '@material-ui/icons/Search';
 
 const itensCheckbox = [
     {
@@ -69,8 +63,6 @@ function Sidebar({ showSidebar }) {
     const [showCamadasContainer, setShowCamadasContainer] = useState(false);
     const [showSobreContainer, setShowSobreContainer] = useState(false);
     const [showBuscaContainer, setShowBuscaContainer] = useState(false);
-    const [opcaoSelecionada, setOpcaoSelecionada] = useState('');
-
     const toggleCamadasContainer = () => {
         setShowCamadasContainer(!showCamadasContainer);
         setShowBuscaContainer(false);
@@ -82,51 +74,10 @@ function Sidebar({ showSidebar }) {
         setShowCamadasContainer(false); // oculta a outra div, se ela estiver aberta
     };
     const toggleBuscaContainer = () => {
-        setShowBuscaContainer(!showBuscaContainer);
+        setShowBuscaContainer(!showSobreContainer);
         setShowSobreContainer(false);
         setShowCamadasContainer(false); // oculta a outra div, se ela estiver aberta
     };
-
-    function handleOpcaoSelecionada(event) {
-        setOpcaoSelecionada(event.target.value);
-    }
-
-    function renderizarCampoDeEntrada() {
-        switch (opcaoSelecionada) {
-            case 'inscricao':
-                return (
-                    <div className="input-group" style={{ display: "flex" }}>
-                        <input className="form-control" type="text" placeholder="Inscrição Cadastral" />
-                        <button className="search-btn">
-                            <SearchIcon />
-                        </button>
-
-                    </div>
-                );
-            case 'n-reduzido':
-                return (
-                    <div className="input-group" style={{ display: "flex" }}>
-                        <input className="form-control" type="text" placeholder="Nº inscr. reduzido" />
-                        <button className="search-btn">
-                            <SearchIcon />
-                        </button>
-                    </div>
-                );
-            case 'endereco':
-                return (
-                    <div className="input-group" style={{ display: "flex" }}>
-                        <input className="form-control" type="text" placeholder="Logradouro" />
-                        <input className="form-control" type="text" placeholder="Endereço" />
-                        <button className="search-btn">
-                            <SearchIcon />
-                        </button>
-                    </div>
-                );
-            default:
-                return null;
-        }
-    }
-
 
 
     return (
@@ -155,17 +106,18 @@ function Sidebar({ showSidebar }) {
                     </li>
                     {showBuscaContainer && (
                         <div className="text-container">
-                            <div className="input-group">
-                                <select value={opcaoSelecionada} onChange={handleOpcaoSelecionada}>
-                                    <option value="" selected disabled>Busca por...</option>
+                            <div>
+                                <select>
+                                    <option value="tipo" selected disabled>Busca por...</option>
                                     <option value="inscricao">Inscrição Cadastral</option>
                                     <option value="n-reduzido">Nº inscr. reduzido</option>
                                     <option value="endereco">Endereço</option>
                                 </select>
                             </div>
-                            {renderizarCampoDeEntrada()}
                         </div>
                     )}
+
+
                     <li onClick={toggleSobreContainer}>
                         Sobre
                     </li>
