@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 import '../components/Sidebar.css'
 
-// import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from '@material-ui/icons/Search';
 
 const itensCheckbox = [
     {
@@ -98,7 +98,7 @@ function Sidebar({ showSidebar }) {
                     <div className="input-group" style={{ display: "flex" }}>
                         <input className="form-control" type="text" placeholder="Inscrição Cadastral" />
                         <button className="search-btn">
-                            {/* <SearchIcon /> */}
+                            <SearchIcon />
                         </button>
 
                     </div>
@@ -108,7 +108,7 @@ function Sidebar({ showSidebar }) {
                     <div className="input-group" style={{ display: "flex" }}>
                         <input className="form-control" type="text" placeholder="Nº inscr. reduzido" />
                         <button className="search-btn">
-                            {/* <SearchIcon /> */}
+                            <SearchIcon />
                         </button>
                     </div>
                 );
@@ -118,7 +118,7 @@ function Sidebar({ showSidebar }) {
                         <input className="form-control" type="text" placeholder="Logradouro" />
                         <input className="form-control" type="text" placeholder="Endereço" />
                         <button className="search-btn">
-                            {/* <SearchIcon /> */}
+                            <SearchIcon />
                         </button>
                     </div>
                 );
