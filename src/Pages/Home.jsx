@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 
 import Header from "../components/Header";
-import FloatingButton from "../components/FloatingButton";
 
 
 function Home() {
@@ -13,7 +12,6 @@ function Home() {
     <div>
       <div>
         <Header/>
-        <FloatingButton/>
       </div>
 
 
