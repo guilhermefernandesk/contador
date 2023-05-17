@@ -1,17 +1,18 @@
 .header {
-    background-color: white;
-    padding: 5px 10px;
+    background-color: #0c7db1;
+    padding: 20px 10px;
     overflow: hidden;
 }
 
 .header a {
     float: left;
-    color: rgb(19, 100, 181);
+    color: black;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 25px;
+    border-radius: 4px;
 }
 
 .header a.logo {
@@ -20,14 +21,15 @@
 }
 
 .header a:hover {
-    color:  #03202d;
+    background-color: #ddd;
+    color: black;
 }
 
 .header-right {
     float: right;
-    
 
 }
 .header a.btn{
-    font-size: 30px;
+    font-size: 25px;
+    padding: 10px;
 }
