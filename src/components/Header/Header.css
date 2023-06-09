@@ -19,3 +19,11 @@
 	color: blue;
 	font-weight: bold;
 }
+.conteudo-lista{
+	padding: 24px;
+}
+.conteudo-lista label{
+	display: block;
+	margin-bottom: .3rem;
+	font-weight: bold;
+}
