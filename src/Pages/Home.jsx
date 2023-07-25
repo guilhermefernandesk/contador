@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import '../components/Header/Header.css'
 import { useState } from "react";
 
-
+import api from '../services/api';
 
 function Home() {
   const { count } = useParams();
@@ -33,6 +33,15 @@ function Home() {
           onChange={(e) => setOpcaoSelecionada(e.target.value)}
         />
         <label for="o2">Sobre</label>
+        <input
+          type="radio"
+          name="s1"
+          id="o3"
+          value="Aula"
+          checked={opcaoSelecionada === "Aula"}
+          onChange={(e) => setOpcaoSelecionada(e.target.value)}
+        />
+        <label for="o3">Aula</label>
       </div>
 
 
@@ -52,6 +61,12 @@ function Home() {
           <div className="conteudo-lista">
             <label>N° Inscrição</label>
             <input id="nInscricao" name="nInscricao" />
+          </div>
+        )}
+
+        {opcaoSelecionada === "Aula" && (
+          <div >
+            <label>Hello wordls</label>
           </div>
         )}
       </div>
