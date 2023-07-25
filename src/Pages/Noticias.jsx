@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from 'react';
 
 import '../components/Cards.css'
-import '../Pages/Noticias.css'
+import './Noticias.css'
 
 import { data } from '../dataNews/data'
 import Cards from "../components/Cards";

@@ -7,9 +7,9 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import Contador from "./Pages/Contador";
-import Home from "./Pages/Home";
-import Noticias from "./Pages/Noticias";
+import Contador from "./pages/Contador";
+import Home from "./pages/Home";
+import Noticias from "./pages/Noticias";
 
 
 function App() {
