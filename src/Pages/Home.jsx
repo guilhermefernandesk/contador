@@ -5,11 +5,28 @@ import '../components/Header/Header.css'
 import { useState } from "react";
 
 import api from '../services/api';
+import { useEffect } from "react";
 
 function Home() {
   const { count } = useParams();
   const { name } = useParams();
   const [opcaoSelecionada, setOpcaoSelecionada] = useState("Home");
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    api.get('projects').then(response => {
+      setProjects(response.data);
+    });
+  }, []);
+
+  async function handleAddProject() {
+    const response = await api.post('projects', {
+      title: `Novo Projeto ${Date.now()}`,
+      owner: "Guilherme Fernandes"
+    });
+    const project = response.data;
+    setProjects([...projects, project])
+  };
 
   return (
     <div>
@@ -65,8 +82,11 @@ function Home() {
         )}
 
         {opcaoSelecionada === "Aula" && (
-          <div >
-            <label>Hello wordls</label>
+          <div>
+            <ul>
+              {projects.map(project => <li key={project.id}>{project.title}</li>)}
+            </ul>
+            <button onClick={handleAddProject}>Add Project</button>
           </div>
         )}
       </div>
